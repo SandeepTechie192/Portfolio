@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/Harsh_Resume__.pdf";
+import pdf from "../../Assets/Sandeep-Soni.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -38,7 +38,7 @@ return (
 				</Document>
 			</Row>
 
-			<Row style={{ justifyContent: "center", position: "relative" }}>
+			{/* <Row style={{ justifyContent: "center", position: "relative" }}>
 				<Button
 					variant="primary"
 					href={pdf}
@@ -48,7 +48,7 @@ return (
 					<AiOutlineDownload />
 					&nbsp;Download CV
 				</Button>
-			</Row>
+			</Row> */}
 		</Container>
 	</div>
 );

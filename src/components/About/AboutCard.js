@@ -1,39 +1,53 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { FaGamepad, FaPen, FaPlane, FaCoffee } from "react-icons/fa";
 
 function AboutCard() {
   return (
-    <Card className="quote-card-view">
+    <Card className="quote-card-view card-shine">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Harsh Kumar Gupta </span>
-            from <span className="purple"> Delhi, India.</span>
+            Hi Everyone, I am <span className="purple">Sandeep Soni</span>
+            from <span className="purple">{" "}Delhi, India.</span>
             <br />
-            {/* I am currently employed as a software developer at Juspay. */}
             <br />
-            Currently pursuing B.Tech in IT from ADGIPS.
+            I'm a passionate <span className="purple">Frontend Developer</span> who loves turning ideas into 
+            interactive digital experiences.
+            <br />
+            <br />
+            Graduated from Inderprastha engineering college with a degree in computer science, I have a strong foundation in web technologies and a keen eye for design.
             <br />
             <br />
             Apart from coding, some other activities that I love to do!
           </p>
-          <ul>
+          <ul className="about-activity-list">
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <span className="activity-icon"><FaGamepad /></span>
+              <span>Playing Games</span>
+            </li>
+            {/* <li className="about-activity">
+              <span className="activity-icon"><FaPen /></span>
+              <span>Writing Tech Blogs</span>
+            </li> */}
+            <li className="about-activity">
+              <span className="activity-icon"><FaPlane /></span>
+              <span>Travelling</span>
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
-            </li>
-            <li className="about-activity">
-              <ImPointRight /> Travelling
+              <span className="activity-icon"><FaCoffee /></span>
+              <span>Coffee & Code Sessions</span>
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Harsh</footer>
+          <div className="quote-highlight">
+            <p>
+              "Strive to build things that make a difference!"
+            </p>
+          </div>
+          <footer className="blockquote-footer">
+            <span className="purple">Sandeep</span>
+          </footer>
         </blockquote>
       </Card.Body>
     </Card>

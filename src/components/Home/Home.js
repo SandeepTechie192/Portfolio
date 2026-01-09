@@ -4,6 +4,8 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import Testimonials from "../Testimonials";
+import Contact from "../Contact";
 
 function Home() {
   return (
@@ -22,7 +24,7 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> Harsh Kumar Gupta</strong>
+                <strong className="main-name">{" "}Sandeep Soni</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
@@ -34,14 +36,19 @@ function Home() {
               <img
                 src={homeLogo}
                 alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
+                className="img-fluid floating-animation"
+                style={{ 
+                  maxHeight: "450px", 
+                  filter: "drop-shadow(0 0 40px rgba(0, 212, 255, 0.4)) drop-shadow(0 0 80px rgba(255, 0, 128, 0.2))"
+                }}
               />
             </Col>
           </Row>
         </Container>
       </Container>
       <Home2 />
+      <Testimonials />
+      <Contact />
     </section>
   );
 }

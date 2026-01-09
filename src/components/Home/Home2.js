@@ -8,6 +8,9 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import Stats from "../Stats";
+import HireMe from "../HireMe";
+import SectionDivider from "../SectionDivider";
 
 function Home2() {
   return (
@@ -19,42 +22,40 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have atleast learnt
-              something, I think… 🤷‍♂️
+              I am a passionate <b className="purple">Frontend Developer</b> who
+              enjoys building clean, responsive, and user-friendly web
+              applications.
               <br />
-              <br />I am fluent in classics like
-              <i>
-                <b className="purple"> C++, Javascript. </b>
-              </i>
-              <br />
-              <br />
-              My field of Interest's are building new &nbsp;
-              <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  AWS.
-                </b>
-              </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              <br />I have hands-on experience working with modern frontend
+              technologies like
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  JavaScript, React.js, HTML, CSS, and Tailwind CSS.
                 </b>
               </i>
-              &nbsp; like
+              <br />
+              <br />
+              My primary interest lies in creating engaging user interfaces,
+              improving performance, and translating design ideas into
+              high-quality code using
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> modern web technologies</b>
               </i>
+              .
+              <br />
+              <br />
+              Whenever possible, I focus on building scalable and maintainable
+              frontend solutions, and I enjoy working with
+              <i>
+                <b className="purple"> React.js, Next.js</b>
+              </i>
+              &nbsp;and other modern JavaScript frameworks.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid avatar-glow" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -67,40 +68,44 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/Harshgupta1210"
+                  href="https://github.com/SandeepTechie192"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  aria-label="GitHub"
                 >
                   <AiFillGithub />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://x.com/HarshGupta20828"
+                  href="https://x.com/Sandeep872675"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  aria-label="Twitter"
                 >
                   <AiOutlineTwitter />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/harsh-gupta-b08a81232/"
+                  href="https://www.linkedin.com/in/sandeep-soni-cse/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  aria-label="LinkedIn"
                 >
                   <FaLinkedinIn />
                 </a>
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/harshgupta4733/"
+                  href="https://www.instagram.com/_.sandeepsoni/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
+                  aria-label="Instagram"
                 >
                   <AiFillInstagram />
                 </a>
@@ -109,6 +114,15 @@ function Home2() {
           </Col>
         </Row>
       </Container>
+
+      {/* Stats Section */}
+      <Stats />
+
+      {/* Section Divider */}
+      <SectionDivider variant="gradient" />
+
+      {/* Hire Me Section */}
+      <HireMe />
     </Container>
   );
 }

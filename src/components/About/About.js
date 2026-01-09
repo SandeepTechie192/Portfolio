@@ -6,6 +6,9 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
 import Toolstack from "./Toolstack";
+import SkillBars from "./SkillBars";
+import Experience from "./Experience";
+import SectionDivider from "../SectionDivider";
 
 function About() {
   return (
@@ -31,9 +34,25 @@ function About() {
             style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            <img 
+              src={laptopImg} 
+              alt="about" 
+              className="img-fluid tilt-image" 
+              style={{
+                filter: "drop-shadow(0 0 30px rgba(0, 212, 255, 0.3))"
+              }}
+            />
           </Col>
         </Row>
+
+        {/* Experience Timeline */}
+        <Experience />
+        
+        <SectionDivider variant="dots" />
+
+        {/* Skill Proficiency Bars */}
+        <SkillBars />
+
         <h1 className="project-heading">
           Professional <strong className="purple">Skillset </strong>
         </h1>

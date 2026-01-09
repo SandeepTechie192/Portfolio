@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #0f0f1a;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -25,10 +25,341 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #00d4ff;
 }
 
 @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Floating Animation */
+.floating-animation {
+  animation: floating 4s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-15px) rotate(1deg);
+  }
+  50% {
+    transform: translateY(-25px) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-15px) rotate(-1deg);
+  }
+}
+
+/* Neon Glow Text */
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.8),
+               0 0 20px rgba(0, 212, 255, 0.6),
+               0 0 30px rgba(0, 212, 255, 0.4),
+               0 0 40px rgba(255, 0, 128, 0.3);
+}
+
+/* Brand name styling */
+.brand-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #00d4ff 0%, #ff0080 50%, #ffd700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: 0;
+  letter-spacing: 2px;
+  animation: gradientShift 3s ease infinite;
+  background-size: 200% 200%;
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* Gradient text effect */
+.gradient-text {
+  background: linear-gradient(135deg, #00d4ff 0%, #ff0080 50%, #ffd700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Card hover glow */
+.card-glow:hover {
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.4), 0 0 80px rgba(255, 0, 128, 0.2);
+}
+
+/* Pulse animation for icons */
+.pulse-icon {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.5));
+  }
+  50% {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(255, 0, 128, 0.6));
+  }
+}
+
+/* Smooth reveal animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom selection color */
+::selection {
+  background: rgba(255, 0, 128, 0.3);
+  color: #00d4ff;
+}
+
+::-moz-selection {
+  background: rgba(255, 0, 128, 0.3);
+  color: #00d4ff;
+}
+
+/* Glitch effect for headings */
+.glitch {
+  position: relative;
+}
+
+.glitch::before,
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.glitch::before {
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+}
+
+.glitch::after {
+  animation: glitchBottom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+
+@keyframes glitchTop {
+  0%, 100% {
+    transform: translateX(0);
+    color: #00d4ff;
+  }
+  25% {
+    transform: translateX(-2px);
+    color: #ff0080;
+  }
+  75% {
+    transform: translateX(2px);
+    color: #ffd700;
+  }
+}
+
+@keyframes glitchBottom {
+  0%, 100% {
+    transform: translateX(0);
+    color: #00d4ff;
+  }
+  25% {
+    transform: translateX(2px);
+    color: #ffd700;
+  }
+  75% {
+    transform: translateX(-2px);
+    color: #ff0080;
+  }
+}
+
+/* Shimmer effect */
+.shimmer {
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* --------- */
+/* Cool Loader Animation */
+/* --------- */
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.loader-inner {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.loader-line-wrap {
+  animation: spin 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+  box-sizing: border-box;
+  height: 50px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  transform-origin: 50% 100%;
+  width: 100px;
+}
+
+.loader-line {
+  border: 4px solid transparent;
+  border-radius: 100%;
+  box-sizing: border-box;
+  height: 100px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+}
+
+.loader-line-wrap:nth-child(1) {
+  animation-delay: -0.05s;
+}
+.loader-line-wrap:nth-child(1) .loader-line {
+  border-color: #00d4ff;
+  height: 100px;
+  width: 100px;
+  top: 0;
+}
+
+.loader-line-wrap:nth-child(2) {
+  animation-delay: -0.1s;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+  border-color: #ff0080;
+  height: 90px;
+  width: 90px;
+  top: 5px;
+}
+
+.loader-line-wrap:nth-child(3) {
+  animation-delay: -0.15s;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+  border-color: #ffd700;
+  height: 80px;
+  width: 80px;
+  top: 10px;
+}
+
+.loader-line-wrap:nth-child(4) {
+  animation-delay: -0.2s;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+  border-color: #a855f7;
+  height: 70px;
+  width: 70px;
+  top: 15px;
+}
+
+.loader-line-wrap:nth-child(5) {
+  animation-delay: -0.25s;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+  border-color: #00ff88;
+  height: 60px;
+  width: 60px;
+  top: 20px;
+}
+
+@keyframes spin {
+  0%, 15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+/* Typewriter cursor blink */
+.typed-cursor {
+  animation: blink 1s infinite;
+  color: #ff0080;
+  font-weight: 100;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Image 3D tilt hover */
+.tilt-image {
+  transition: transform 0.3s ease;
+}
+
+.tilt-image:hover {
+  transform: perspective(1000px) rotateY(-5deg) rotateX(5deg);
+}
+
+/* Border Beam Animation */
+.border-beam {
+  position: relative;
+  overflow: hidden;
+}
+
+.border-beam::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: conic-gradient(from 0deg, transparent, #00d4ff, #ff0080, #ffd700, transparent);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: borderRotate 4s linear infinite;
+}
+
+@keyframes borderRotate {
   from {
     transform: rotate(0deg);
   }

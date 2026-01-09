@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v2.0<br/>
-  <a href="" target="_blank">Harsh.tech</a>
+  <a href="" target="_blank">Sandeep.tech</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
@@ -26,11 +26,11 @@
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [Harshgupta1210](). Thanks!
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [SandeepTechie192](). Thanks!
 
 ## Built With
 
-My personal portfolio <a href="" target="_blank">Harsh.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
+My personal portfolio <a href="" target="_blank">Sandeep.tech</a> which features some of my github projects as well as my resume and technical skills.<br/>
 
 This project was built using these technologies.
 

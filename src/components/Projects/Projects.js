@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+
+// Placeholder images - replace these with actual screenshots later
+const placeholderImg1 = "https://placehold.co/600x400/0f0f1a/00d4ff?text=Creme+Borne&font=montserrat";
+const placeholderImg2 = "https://placehold.co/600x400/0f0f1a/ff0080?text=Aahar&font=montserrat";
+const placeholderImg3 = "https://placehold.co/600x400/1a1a2e/ffd700?text=AdaptMate&font=montserrat";
+const placeholderImg4 = "https://placehold.co/600x400/1a1a2e/00d4ff?text=Ojas+Occasion&font=montserrat";
 
 function Projects() {
   return (
@@ -17,77 +17,114 @@ function Projects() {
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
         </h1>
-        <p style={{ color: "white" }}>
+        <p style={{ color: "white", marginBottom: "10px" }}>
           Here are a few projects I've worked on recently.
         </p>
+        
+        {/* Project Stats */}
+        <div className="project-stats-bar">
+          <div className="project-stat-item">
+            <span className="stat-number">4+</span>
+            <span className="stat-label">Projects</span>
+          </div>
+          <div className="project-stat-item">
+            <span className="stat-number">2</span>
+            <span className="stat-label">Personal</span>
+          </div>
+          <div className="project-stat-item">
+            <span className="stat-number">2</span>
+            <span className="stat-label">Professional</span>
+          </div>
+        </div>
+
+        {/* Personal Projects Section */}
+        <h2 className="project-sub-heading" style={{ 
+          color: "#00d4ff", 
+          fontSize: "1.8em", 
+          marginTop: "40px", 
+          marginBottom: "25px",
+          textAlign: "left",
+          borderLeft: "4px solid #ff0080",
+          paddingLeft: "15px",
+          textShadow: "0 0 10px rgba(0, 212, 255, 0.5)"
+        }}>
+          <strong style={{ color: "#ff0080" }}>🚀</strong> Personal Projects
+        </h2>
+        
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={placeholderImg1}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Creme Borne"
+              description="A modern and elegant web application showcasing creative design and smooth user experience. Built with cutting-edge technologies to deliver a premium digital experience."
+              demoLink="https://creme-borne.vercel.app/"
+              techStack={["React", "CSS3", "Vercel"]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={placeholderImg2}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Aahar"
+              description="A comprehensive food-related web application designed to provide users with an intuitive interface for exploring and discovering culinary delights. Features modern UI/UX design patterns."
+              demoLink="https://aahar-seven.vercel.app/"
+              techStack={["React", "Node.js", "MongoDB"]}
             />
           </Col>
         </Row>
+
+        {/* Professional Projects Section */}
+        <h2 className="project-sub-heading" style={{ 
+          color: "#ffd700", 
+          fontSize: "1.8em", 
+          marginTop: "50px", 
+          marginBottom: "25px",
+          textAlign: "left",
+          borderLeft: "4px solid #00d4ff",
+          paddingLeft: "15px",
+          textShadow: "0 0 10px rgba(255, 215, 0, 0.5)"
+        }}>
+          <strong style={{ color: "#00d4ff" }}>💼</strong> Professional Projects
+        </h2>
+        <p style={{ color: "#8b8b9a", marginBottom: "20px", fontStyle: "italic" }}>
+          Projects developed during my professional experience at organizations
+        </p>
+
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={placeholderImg3}
+              isBlog={false}
+              title="AdaptMate"
+              description="A professional enterprise solution built for adaptmate.in. This platform provides innovative solutions with a focus on user engagement and business efficiency. Developed as part of organizational requirements."
+              demoLink="https://adaptmate.in/"
+              isOrganization={true}
+              techStack={["Next.js", "TypeScript", "AWS"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={placeholderImg4}
+              isBlog={false}
+              title="Ojas Occasion"
+              description="A feature-rich event management and occasion planning platform. Designed and developed for ojasoccasion.com to help users plan and organize memorable events with ease and elegance."
+              demoLink="https://www.ojasoccasion.com/"
+              isOrganization={true}
+              techStack={["React", "Redux", "Firebase"]}
+            />
+          </Col>
+        </Row>
+        
+        {/* Call to Action */}
+        <div className="project-cta">
+          <p>Interested in collaborating?</p>
+          <a href="mailto:vermasandeep1290@gmail.com" className="cta-button">
+            Let's Build Something Amazing
+          </a>
+        </div>
       </Container>
     </Container>
   );
