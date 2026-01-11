@@ -27,7 +27,7 @@ function Projects() {
             <span className="stat-label">Projects</span>
           </div>
           <div className="project-stat-item">
-            <span className="stat-number">2</span>
+            <span className="stat-number">3</span>
             <span className="stat-label">Personal</span>
           </div>
           <div className="project-stat-item">
@@ -143,7 +143,12 @@ function Projects() {
         {/* Call to Action */}
         <div className="project-cta">
           <p>Interested in collaborating?</p>
-          <a href="mailto:vermasandeep1290@gmail.com" className="cta-button">
+          <a 
+            href="https://wa.me/918726759825?text=Hi%20Sandeep!%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you." 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="cta-button"
+          >
             Let's Build Something Amazing
           </a>
         </div>
