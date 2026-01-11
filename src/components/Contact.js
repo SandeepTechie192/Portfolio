@@ -11,7 +11,7 @@ function Contact() {
     subject: "",
     message: ""
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false); 
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState(false);
 
