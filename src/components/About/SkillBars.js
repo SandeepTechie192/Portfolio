@@ -29,7 +29,7 @@ function SkillBars() {
                 className="skill-bar-fill"
                 style={{
                   width: `${skill.level}%`,
-                  background: `linear-gradient(90deg, ${skill.color}, ${skill.color}80)`,
+                  background: skill.color,
                   animationDelay: `${index * 0.1}s`,
                 }}
               >

@@ -69,14 +69,10 @@
 .brand-name {
   font-size: 1.6rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #00d4ff 0%, #ff0080 50%, #ffd700 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #00d4ff;
   margin: 0;
   letter-spacing: 2px;
-  animation: gradientShift 3s ease infinite;
-  background-size: 200% 200%;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
 @keyframes gradientShift {
@@ -88,12 +84,10 @@
   }
 }
 
-/* Gradient text effect */
+/* Solid color text effect */
 .gradient-text {
-  background: linear-gradient(135deg, #00d4ff 0%, #ff0080 50%, #ffd700 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
 }
 
 /* Card hover glow */
@@ -351,7 +345,7 @@
   inset: 0;
   padding: 2px;
   border-radius: inherit;
-  background: conic-gradient(from 0deg, transparent, #00d4ff, #ff0080, #ffd700, transparent);
+  background: conic-gradient(from 0deg, transparent, #00d4ff, #00d4ff, transparent);
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;

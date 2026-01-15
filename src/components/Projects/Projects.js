@@ -36,58 +36,6 @@ function Projects() {
           </div>
         </div>
 
-        {/* Personal Projects Section */}
-        <h2
-          className="project-sub-heading"
-          style={{
-            color: "#00d4ff",
-            fontSize: "1.8em",
-            marginTop: "40px",
-            marginBottom: "25px",
-            textAlign: "left",
-            borderLeft: "4px solid #ff0080",
-            paddingLeft: "15px",
-            textShadow: "0 0 10px rgba(0, 212, 255, 0.5)",
-          }}
-        >
-          <strong style={{ color: "#ff0080" }}>🚀</strong> Personal Projects
-        </h2>
-
-        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Cremeborne}
-              isBlog={false}
-              title="Creme Borne"
-              description="A modern and elegant web application showcasing creative design and smooth user experience. Built with cutting-edge technologies to deliver a premium digital experience."
-              demoLink="https://creme-borne.vercel.app/"
-              techStack={["React", "Tailwind-Css", "Vercel"]}
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Designyard}
-              isBlog={false}
-              title="The Design Yard"
-              description="A thoughtfully designed interior design website that highlights bespoke spaces, creative layouts, and aesthetic excellence. Developed using modern UI/UX design patterns for a smooth and immersive experience."
-              demoLink="https://thedesignyard.co.in/"
-              techStack={["React", "CSS", "Javascript", "Vite"]}
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={Aahar}
-              isBlog={false}
-              title="Aahar"
-              description="A comprehensive food-related web application designed to provide users with an intuitive interface for exploring and discovering culinary delights. Features modern UI/UX design patterns."
-              demoLink="https://aahar-seven.vercel.app/"
-              techStack={["Html", "CSS", "Javascript", "Vite"]}
-            />
-          </Col>
-        </Row>
-
         {/* Professional Projects Section */}
         <h2
           className="project-sub-heading"
@@ -140,12 +88,64 @@ function Projects() {
           </Col>
         </Row>
 
+        {/* Personal Projects Section */}
+        <h2
+          className="project-sub-heading"
+          style={{
+            color: "#00d4ff",
+            fontSize: "1.8em",
+            marginTop: "40px",
+            marginBottom: "25px",
+            textAlign: "left",
+            borderLeft: "4px solid #ff0080",
+            paddingLeft: "15px",
+            textShadow: "0 0 10px rgba(0, 212, 255, 0.5)",
+          }}
+        >
+          <strong style={{ color: "#ff0080" }}>🚀</strong> Personal Projects
+        </h2>
+
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Cremeborne}
+              isBlog={false}
+              title="Creme Borne"
+              description="A modern and elegant web application showcasing creative design and smooth user experience. Built with cutting-edge technologies to deliver a premium digital experience."
+              demoLink="https://creme-borne.vercel.app/"
+              techStack={["React", "Tailwind-Css", "Vercel"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Designyard}
+              isBlog={false}
+              title="The Design Yard"
+              description="A thoughtfully designed interior design website that highlights bespoke spaces, creative layouts, and aesthetic excellence. Developed using modern UI/UX design patterns for a smooth and immersive experience."
+              demoLink="https://thedesignyard.co.in/"
+              techStack={["React", "CSS", "Javascript", "Vite"]}
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={Aahar}
+              isBlog={false}
+              title="Aahar"
+              description="A comprehensive food-related web application designed to provide users with an intuitive interface for exploring and discovering culinary delights. Features modern UI/UX design patterns."
+              demoLink="https://aahar-seven.vercel.app/"
+              techStack={["Html", "CSS", "Javascript", "Vite"]}
+            />
+          </Col>
+        </Row>
+
         {/* Call to Action */}
         <div className="project-cta">
           <p>Interested in collaborating?</p>
-          <a 
-            href="https://wa.me/918726759825?text=Hi%20Sandeep!%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you." 
-            target="_blank" 
+          <a
+            href="https://wa.me/918726759825?text=Hi%20Sandeep!%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you."
+            target="_blank"
             rel="noopener noreferrer"
             className="cta-button"
           >
