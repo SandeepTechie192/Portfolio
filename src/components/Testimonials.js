@@ -1,29 +1,29 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaQuoteLeft, FaStar } from "react-icons/fa";
+import { FaQuoteLeft, FaStar, FaUserCircle } from "react-icons/fa";
 
 function Testimonials() {
   const testimonials = [
     {
-      name: "Client Name",
-      role: "CEO, Company",
-      text: "Sandeep delivered exceptional work on our project. His attention to detail and creative solutions exceeded our expectations.",
+      name: "Abhishek",
+      role: "BDA, WedMeGood",
+      text: "Sandeep and I have often brainstormed on technical problems; his analytical thinking and problem-solving passion make him a great collaborator.",
       rating: 5,
-      image: "https://randomuser.me/api/portraits/men/32.jpg"
+      linkedin: "https://www.linkedin.com/in/abhijaiswal12578/"
     },
     {
-      name: "Another Client",
-      role: "Product Manager",
-      text: "Working with Sandeep was a pleasure. He understood our requirements perfectly and delivered a stunning frontend.",
+      name: "Harsh",
+      role: "Backend Developer, Hyggex World",
+      text: "Collaborating with Sandeep on the frontend was effortless. He integrated my APIs flawlessly and his clean code made debugging a breeze. A true team player!",
       rating: 5,
-      image: "https://randomuser.me/api/portraits/women/44.jpg"
+      linkedin: "https://www.linkedin.com/in/harsh-gupta-b08a81232/"
     },
     {
-      name: "Team Lead",
-      role: "Tech Lead, Startup",
-      text: "Highly skilled developer with great communication. The UI he built was modern, responsive, and pixel-perfect.",
+      name: "Ishaan",
+      role: "Tech Lead, Hyggex World",
+      text: "Sandeep demonstrates strong technical skills and leadership qualities. His code reviews are thorough, and he consistently delivers scalable, maintainable solutions.",
       rating: 5,
-      image: "https://randomuser.me/api/portraits/men/67.jpg"
+      linkedin: "https://www.linkedin.com/in/ishaangautam9595/"
     }
   ];
 
@@ -45,11 +45,14 @@ function Testimonials() {
                   ))}
                 </div>
                 <div className="testimonial-author">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="testimonial-avatar"
-                  />
+                  <a 
+                    href={testimonial.linkedin} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="testimonial-avatar-link"
+                  >
+                    <FaUserCircle className="testimonial-avatar" />
+                  </a>
                   <div className="testimonial-info">
                     <h4>{testimonial.name}</h4>
                     <p>{testimonial.role}</p>
