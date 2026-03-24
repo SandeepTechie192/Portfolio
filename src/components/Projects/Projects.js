@@ -133,8 +133,8 @@ function Projects() {
               imgPath={Aahar}
               isBlog={false}
               title="Aahar"
-              description="A comprehensive food-related web application designed to provide users with an intuitive interface for exploring and discovering culinary delights. Features modern UI/UX design patterns."
-              demoLink="https://aahar-seven.vercel.app/"
+              description="A restaurant discovery and table booking platform that helps customers find nearby restaurants and reserve tables for their meals. Restaurant owners receive complete customer booking details, making reservation management smooth and efficient."
+              demoLink="https://aahar-allinone.vercel.app/"
               techStack={["Html", "CSS", "Javascript", "Vite"]}
             />
           </Col>
