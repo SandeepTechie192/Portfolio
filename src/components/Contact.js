@@ -59,7 +59,7 @@ function Contact() {
           Get In <span className="purple">Touch</span>
         </h2>
         <p className="contact-subtitle">
-          Have a project in mind? Let's work together!
+          Looking for business opportunities? Let's connect!
         </p>
 
         <Row className="contact-row">
@@ -67,9 +67,9 @@ function Contact() {
             <div className="contact-info-card">
               <h3>Let's Connect</h3>
               <p>
-                I'm currently available for freelance work. If you have a project
-                that you want to get started or need help with something, feel
-                free to reach out.
+                I'm open to discussing business opportunities, strategic partnerships,
+                or full-time positions. Whether you need a business analyst, strategist,
+                or team player, I'd love to hear from you.
               </p>
 
               <div className="contact-info-item">
@@ -78,7 +78,7 @@ function Contact() {
                 </div>
                 <div className="contact-details">
                   <h4>Email</h4>
-                  <p>vermasandeep1290@gmail.com</p>
+                  <p>your.email@example.com</p>
                 </div>
               </div>
 
@@ -88,7 +88,7 @@ function Contact() {
                 </div>
                 <div className="contact-details">
                   <h4>Location</h4>
-                  <p>Delhi, India</p>
+                  <p>[Your City], India</p>
                 </div>
               </div>
 
@@ -98,7 +98,7 @@ function Contact() {
                 </div>
                 <div className="contact-details">
                   <h4>Phone</h4>
-                  <p>+918726759825</p>
+                  <p>+91 XXXXXXXXXX</p>
                 </div>
               </div>
             </div>

@@ -3,13 +3,13 @@ import { Container, Row, Col, ProgressBar } from "react-bootstrap";
 
 function SkillBars() {
   const skills = [
-    { name: "React.js", level: 70, color: "#61DAFB" },
-    { name: "JavaScript", level: 75, color: "#F7DF1E" },
-    { name: "Node.js", level: 30, color: "#339933" },
-    { name: "HTML/CSS", level: 85, color: "#E34F26" },
-    { name: "MongoDB", level: 50, color: "#47A248" },
-    { name: "TypeScript", level: 40, color: "#3178C6" },
-    { name: "Tailwind-Css", level: 60, color: "#38B2AC" },
+    { name: "Financial Analysis", level: 85, color: "#4CAF50" },
+    { name: "Business Strategy", level: 80, color: "#2196F3" },
+    { name: "MS Excel Advanced", level: 90, color: "#217346" },
+    { name: "Market Research", level: 75, color: "#FF5722" },
+    { name: "Data Analytics", level: 70, color: "#9C27B0" },
+    { name: "Leadership", level: 85, color: "#E91E63" },
+    { name: "Presentation Skills", level: 88, color: "#D24726" },
   ];
 
   return (

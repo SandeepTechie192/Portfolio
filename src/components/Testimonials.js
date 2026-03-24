@@ -5,25 +5,25 @@ import { FaQuoteLeft, FaStar, FaUserCircle } from "react-icons/fa";
 function Testimonials() {
   const testimonials = [
     {
-      name: "Abhishek",
-      role: "BDA, WedMeGood",
-      text: "Sandeep and I have often brainstormed on technical problems; his analytical thinking and problem-solving passion make him a great collaborator.",
+      name: "[Colleague Name]",
+      role: "[Position], [Company]",
+      text: "[Add a testimonial about your professional skills, leadership qualities, or business acumen. This could be from a colleague, professor, or mentor.]",
       rating: 5,
-      linkedin: "https://www.linkedin.com/in/abhijaiswal12578/"
+      linkedin: "https://placeholder-link.com"
     },
     {
-      name: "Harsh",
-      role: "Backend Developer, Hyggex World",
-      text: "Collaborating with Sandeep on the frontend was effortless. He integrated my APIs flawlessly and his clean code made debugging a breeze. A true team player!",
+      name: "[Professor/Mentor Name]",
+      role: "Professor, [MBA College]",
+      text: "[Add a testimonial highlighting your academic excellence, analytical thinking, and dedication to business studies.]",
       rating: 5,
-      linkedin: "https://www.linkedin.com/in/harsh-gupta-b08a81232/"
+      linkedin: "https://placeholder-link.com"
     },
     {
-      name: "Ishaan",
-      role: "Tech Lead, Hyggex World",
-      text: "Sandeep demonstrates strong technical skills and leadership qualities. His code reviews are thorough, and he consistently delivers scalable, maintainable solutions.",
+      name: "[Manager/Supervisor Name]",
+      role: "[Position], [Company]",
+      text: "[Add a testimonial about your work ethic, strategic thinking, and contributions to business growth or team success.]",
       rating: 5,
-      linkedin: "https://www.linkedin.com/in/ishaangautam9595/"
+      linkedin: "https://placeholder-link.com"
     }
   ];
 

@@ -1,58 +1,58 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { MdWork, MdSchool } from "react-icons/md";
-import { FaCode, FaRocket } from "react-icons/fa";
+import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 const experiences = [
   {
     id: 1,
-    type: "work",
-    title: "Frontend Developer",
-    organization: "HyggeX World™",
-    duration: "Mar 2025 - Dec 2025",
+    type: "education",
+    title: "Master of Business Administration (MBA)",
+    organization: "[Your MBA College/University]",
+    duration: "[Start Year] - [End Year]",
     description:
-      "Building modern web applications with React.js, Tailwind-css and cutting-edge frontend technologies.",
-    icon: <FaCode />,
+      "Specialized in [Finance/Marketing/HR/Operations] with focus on strategic management, business analytics, and leadership development.",
+    icon: <FaGraduationCap />,
   },
   {
     id: 2,
-    type: "work",
-    title: "Frontend Developer",
-    organization: "WebSmith Software Solutions",
-    duration: "Sept 2024 - Feb 2025",
+    type: "education",
+    title: "Bachelor of Commerce (B.Com)",
+    organization: "[Your College/University]",
+    duration: "[Start Year] - [End Year]",
     description:
-      "Developed responsive websites and collaborated with cross-functional teams on multiple projects.",
-    icon: <FaRocket />,
+      "Graduated with honors, specializing in Accounting, Economics, and Business Studies. Developed strong foundation in financial principles.",
+    icon: <MdSchool />,
   },
   {
     id: 3,
     type: "work",
-    title: "React.js Developer Intern",
-    organization: "TechAhead",
-    duration: "Jun 2024 - Aug 2024",
+    title: "[Your Job Title]",
+    organization: "[Company Name]",
+    duration: "[Start Date] - Present",
     description:
-      "Worked on developing and optimizing React.js components, implementing responsive UI designs, and fixing frontend bugs to improve user experience.",
-    icon: <FaRocket />,
+      "[Describe your current role and responsibilities - e.g., Leading business development initiatives, financial analysis, market research, etc.]",
+    icon: <FaBriefcase />,
   },
   {
     id: 4,
     type: "work",
-    title: "Web Developer Intern",
-    organization: "Macverin Technologies",
-    duration: "Jun 2023 - Aug 2023",
+    title: "[Previous Job Title]",
+    organization: "[Previous Company Name]",
+    duration: "[Start Date] - [End Date]",
     description:
-      "Assisted in building responsive web pages using HTML, CSS, and JavaScript, and collaborated with the team to implement design requirements and enhance website functionality.",
-    icon: <FaRocket />,
+      "[Describe your previous role - e.g., Managed client relationships, conducted market analysis, developed business strategies, etc.]",
+    icon: <FaBriefcase />,
   },
   {
     id: 5,
-    type: "education",
-    title: "B.Tech in Computer Science & Engineering",
-    organization: "IPEC, Ghaziabad",
-    duration: "2020 - 2024",
+    type: "work",
+    title: "Business Analyst Intern",
+    organization: "[Internship Company]",
+    duration: "[Duration]",
     description:
-      "Graduated in 2024 with a Bachelor's degree, focusing on web technologies, and software development.",
-    icon: <MdSchool />,
+      "Assisted in business process analysis, market research, and preparing strategic recommendations for senior management.",
+    icon: <MdWork />,
   },
 ];
 

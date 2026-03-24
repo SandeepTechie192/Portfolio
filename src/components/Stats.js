@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { FaCode, FaProjectDiagram, FaCoffee, FaAward } from "react-icons/fa";
+import { FaBriefcase, FaChartLine, FaHandshake, FaAward } from "react-icons/fa";
 
 function CountUp({ end, duration = 2000, suffix = "" }) {
   const [count, setCount] = useState(0);
@@ -50,32 +50,28 @@ function CountUp({ end, duration = 2000, suffix = "" }) {
 function Stats() {
   const stats = [
     {
-      icon: <FaCode />,
+      icon: <FaBriefcase />,
       count: 2,
       suffix: "+",
       label: "Years Experience",
-      color: "#00d4ff",
     },
     {
-      icon: <FaProjectDiagram />,
-      count: 10,
+      icon: <FaChartLine />,
+      count: 15,
       suffix: "+",
-      label: "Projects Completed",
-      color: "#ff0080",
+      label: "Projects Delivered",
     },
     {
-      icon: <FaCoffee />,
-      count: 500,
+      icon: <FaHandshake />,
+      count: 20,
       suffix: "+",
-      label: "Cups of Coffee",
-      color: "#ffd700",
+      label: "Client Relationships",
     },
     {
       icon: <FaAward />,
       count: 5,
       suffix: "+",
-      label: "Happy Clients",
-      color: "#a855f7",
+      label: "Certifications",
     },
   ];
 
@@ -86,19 +82,13 @@ function Stats() {
           {stats.map((stat, index) => (
             <Col key={index} md={3} sm={6} className="stats-col">
               <div className="stats-card">
-                <div className="stats-icon" style={{ color: stat.color }}>
+                <div className="stats-icon">
                   {stat.icon}
                 </div>
-                <h2 className="stats-count" style={{ color: stat.color }}>
+                <h2 className="stats-count">
                   <CountUp end={stat.count} suffix={stat.suffix} />
                 </h2>
                 <p className="stats-label">{stat.label}</p>
-                <div
-                  className="stats-glow"
-                  style={{
-                    background: `radial-gradient(circle, ${stat.color}20 0%, transparent 70%)`,
-                  }}
-                />
               </div>
             </Col>
           ))}

@@ -1,59 +1,59 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
 import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-  DiHtml5,
-  DiCss3,
-} from "react-icons/di";
+  FaChartLine,
+  FaChartPie,
+  FaChartBar,
+  FaCalculator,
+  FaFileExcel,
+  FaDatabase,
+  FaBriefcase,
+  FaHandshake,
+  FaLightbulb,
+  FaPresentationBoard,
+  FaUsers,
+  FaBalanceScale,
+} from "react-icons/fa";
 import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-  SiTypescript,
-  SiTailwindcss,
+  SiMicrosoftexcel,
+  SiTableau,
+  SiGoogleanalytics,
+  SiSap,
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { MdAnalytics, MdTrendingUp, MdAccountBalance } from "react-icons/md";
+import { BsGraphUp, BsBank } from "react-icons/bs";
 
 function Techstack() {
-  const techStack = [
-    { icon: <DiJavascript1 />, name: "JavaScript", color: "#F7DF1E" },
-    { icon: <SiTypescript />, name: "TypeScript", color: "#3178C6" },
-    { icon: <DiReact />, name: "React.js", color: "#61DAFB" },
-    { icon: <SiNextdotjs />, name: "Next.js", color: "#ffffff" },
-    { icon: <DiNodejs />, name: "Node.js", color: "#339933" },
-    { icon: <DiHtml5 />, name: "HTML5", color: "#E34F26" },
-    { icon: <DiCss3 />, name: "CSS3", color: "#1572B6" },
-    { icon: <SiTailwindcss />, name: "Tailwind CSS", color: "#06B6D4" },
-    { icon: <DiMongodb />, name: "MongoDB", color: "#47A248" },
-    { icon: <SiFirebase />, name: "Firebase", color: "#FFCA28" },
-    { icon: <SiPostgresql />, name: "PostgreSQL", color: "#4169E1" },
-    { icon: <DiPython />, name: "Python", color: "#3776AB" },
+  const skillStack = [
+    { icon: <FaChartLine />, name: "Financial Analysis", color: "#4CAF50" },
+    { icon: <SiMicrosoftexcel />, name: "MS Excel", color: "#217346" },
+    { icon: <SiTableau />, name: "Tableau", color: "#E97627" },
+    { icon: <MdAnalytics />, name: "Business Analytics", color: "#00BCD4" },
+    { icon: <FaCalculator />, name: "Accounting", color: "#9C27B0" },
+    { icon: <BsGraphUp />, name: "Market Research", color: "#FF5722" },
+    { icon: <FaHandshake />, name: "Negotiation", color: "#FFC107" },
+    { icon: <MdTrendingUp />, name: "Strategic Planning", color: "#2196F3" },
+    { icon: <FaBriefcase />, name: "Business Development", color: "#673AB7" },
+    { icon: <FaUsers />, name: "Team Leadership", color: "#E91E63" },
+    { icon: <MdAccountBalance />, name: "Finance Management", color: "#00796B" },
+    { icon: <SiGoogleanalytics />, name: "Google Analytics", color: "#F4B400" },
   ];
 
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      {techStack.map((tech, index) => (
+      {skillStack.map((skill, index) => (
         <Col 
           xs={4} 
           md={2} 
           className="tech-icons tech-tooltip" 
           key={index}
-          data-tooltip={tech.name}
+          data-tooltip={skill.name}
           style={{
-            "--hover-color": tech.color,
+            "--hover-color": skill.color,
           }}
         >
           <span style={{ transition: "color 0.3s ease" }}>
-            {tech.icon}
+            {skill.icon}
           </span>
         </Col>
       ))}

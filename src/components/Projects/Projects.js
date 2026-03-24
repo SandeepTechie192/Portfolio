@@ -2,11 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import Cremeborne from "../../Assets/Projects/Cremeborne.png";
-import Aahar from "../../Assets/Projects/Aahar.png";
-import Hyggex from "../../Assets/Projects/Hyggex.png";
-import Ojas from "../../Assets/Projects/Ojas.png";
-import Designyard from "../../Assets/Projects/The design yard.png";
+// Import your project images here
+// import ProjectImage1 from "../../Assets/Projects/project1.png";
 
 function Projects() {
   return (
@@ -14,25 +11,25 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Portfolio </strong>
         </h1>
         <p style={{ color: "white", marginBottom: "10px" }}>
-          Here are a few projects I've worked on recently.
+          Here are some of my key achievements and projects.
         </p>
 
         {/* Project Stats */}
         <div className="project-stats-bar">
           <div className="project-stat-item">
-            <span className="stat-number">4+</span>
+            <span className="stat-number">5+</span>
             <span className="stat-label">Projects</span>
           </div>
           <div className="project-stat-item">
             <span className="stat-number">3</span>
-            <span className="stat-label">Personal</span>
+            <span className="stat-label">Case Studies</span>
           </div>
           <div className="project-stat-item">
             <span className="stat-number">2</span>
-            <span className="stat-label">Professional</span>
+            <span className="stat-label">Certifications</span>
           </div>
         </div>
 
@@ -50,7 +47,7 @@ function Projects() {
             textShadow: "0 0 10px rgba(255, 215, 0, 0.5)",
           }}
         >
-          <strong style={{ color: "#00d4ff" }}>💼</strong> Professional Projects
+          <strong style={{ color: "#00d4ff" }}>💼</strong> Professional Work
         </h2>
         <p
           style={{
@@ -59,36 +56,34 @@ function Projects() {
             fontStyle: "italic",
           }}
         >
-          Projects developed during my professional experience at organizations
+          Key projects and achievements from my professional experience
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Hyggex}
               isBlog={false}
-              title="AdaptMate"
-              description="A professional enterprise solution built for adaptmate.in. This platform provides innovative solutions with a focus on user engagement and business efficiency. Developed as part of organizational requirements."
-              demoLink="https://adaptmate.in/"
+              title="[Project Title 1]"
+              description="[Add description of your business project, case study, or professional achievement. Include metrics and impact where possible.]"
+              demoLink="#"
               isOrganization={true}
-              techStack={["React.js", "JavaScript", "Tailwind-Css", "Redux"]}
+              techStack={["Strategy", "Analysis", "Leadership"]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Ojas}
               isBlog={false}
-              title="Ojas Occasion"
-              description="A feature-rich event management and occasion planning platform. Designed and developed for ojasoccasion.com to help users plan and organize memorable events with ease and elegance."
-              demoLink="https://www.ojasoccasion.com/"
+              title="[Project Title 2]"
+              description="[Describe a significant business project you worked on - market research, financial analysis, business development initiative, etc.]"
+              demoLink="#"
               isOrganization={true}
-              techStack={["React", "JavaScript", "CSS"]}
+              techStack={["Finance", "Research", "Planning"]}
             />
           </Col>
         </Row>
 
-        {/* Personal Projects Section */}
+        {/* Academic Projects Section */}
         <h2
           className="project-sub-heading"
           style={{
@@ -102,54 +97,51 @@ function Projects() {
             textShadow: "0 0 10px rgba(0, 212, 255, 0.5)",
           }}
         >
-          <strong style={{ color: "#ff0080" }}>🚀</strong> Personal Projects
+          <strong style={{ color: "#ff0080" }}>📚</strong> Academic & Case Studies
         </h2>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Cremeborne}
               isBlog={false}
-              title="Creme Borne"
-              description="A modern and elegant web application showcasing creative design and smooth user experience. Built with cutting-edge technologies to deliver a premium digital experience."
-              demoLink="https://creme-borne.vercel.app/"
-              techStack={["React", "Tailwind-Css", "Vercel"]}
+              title="[MBA Case Study]"
+              description="[Describe an MBA project or case study you worked on. Include the business problem solved and methodologies used.]"
+              demoLink="#"
+              techStack={["Case Analysis", "Strategy", "Excel"]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Designyard}
               isBlog={false}
-              title="The Design Yard"
-              description="A thoughtfully designed interior design website that highlights bespoke spaces, creative layouts, and aesthetic excellence. Developed using modern UI/UX design patterns for a smooth and immersive experience."
-              demoLink="https://thedesignyard.co.in/"
-              techStack={["React", "CSS", "Javascript", "Vite"]}
+              title="[Research Project]"
+              description="[Describe any research or thesis work from your MBA or B.Com. Include the topic, methodology, and key findings.]"
+              demoLink="#"
+              techStack={["Research", "Data Analysis", "Report"]}
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={Aahar}
               isBlog={false}
-              title="Aahar"
-              description="A comprehensive food-related web application designed to provide users with an intuitive interface for exploring and discovering culinary delights. Features modern UI/UX design patterns."
-              demoLink="https://aahar-seven.vercel.app/"
-              techStack={["Html", "CSS", "Javascript", "Vite"]}
+              title="[Business Plan]"
+              description="[Describe a business plan or entrepreneurship project you developed during your studies or independently.]"
+              demoLink="#"
+              techStack={["Planning", "Finance", "Marketing"]}
             />
           </Col>
         </Row>
 
         {/* Call to Action */}
         <div className="project-cta">
-          <p>Interested in collaborating?</p>
+          <p>Interested in working together?</p>
           <a
-            href="https://wa.me/918726759825?text=Hi%20Sandeep!%20I%20visited%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project%20with%20you."
+            href="mailto:your.email@example.com"
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button"
           >
-            Let's Build Something Amazing
+            Let's Discuss Opportunities
           </a>
         </div>
       </Container>

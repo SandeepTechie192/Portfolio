@@ -3,7 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
 import {
-  AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
@@ -22,35 +21,32 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I am a passionate <b className="purple">Frontend Developer</b> who
-              enjoys building clean, responsive, and user-friendly web
-              applications.
+              I am a dedicated <b className="purple">Commerce & MBA Graduate</b> with
+              a passion for business strategy, financial analysis, and market research.
               <br />
-              <br />I have hands-on experience working with modern frontend
-              technologies like
+              <br />I possess strong expertise in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, React.js, HTML, CSS, and Tailwind CSS.
+                  Financial Planning, Business Development, Marketing Strategy, and Data Analytics.
                 </b>
               </i>
               <br />
               <br />
-              My primary interest lies in creating engaging user interfaces,
-              improving performance, and translating design ideas into
-              high-quality code using
+              My core strengths lie in strategic thinking, market analysis,
+              developing business solutions, and driving organizational growth using
               <i>
-                <b className="purple"> modern web technologies</b>
+                <b className="purple"> innovative business methodologies</b>
               </i>
               .
               <br />
               <br />
-              Whenever possible, I focus on building scalable and maintainable
-              frontend solutions, and I enjoy working with
+              I am passionate about transforming business challenges into opportunities,
+              and I excel in
               <i>
-                <b className="purple"> React.js, Next.js</b>
+                <b className="purple"> strategic planning, financial modeling,</b>
               </i>
-              &nbsp;and other modern JavaScript frameworks.
+              &nbsp;and building sustainable business frameworks.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -68,18 +64,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/SandeepTechie192"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                  aria-label="GitHub"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://x.com/Sandeep872675"
+                  href="https://placeholder-link.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -90,7 +75,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/sandeep-soni-cse/"
+                  href="https://placeholder-link.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -101,7 +86,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/_.sandeepsoni/"
+                  href="https://placeholder-link.com"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"

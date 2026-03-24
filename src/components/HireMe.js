@@ -1,27 +1,26 @@
 import React from "react";
 import { FaEnvelope, FaDownload } from "react-icons/fa";
-import pdf from "../Assets/Sandeep-Soni.pdf";
 
 function HireMe() {
   return (
     <div className="hire-me-section">
       <div className="hire-me-content">
         <h2 className="hire-me-title">
-          Interested in working together?
+          Looking for Business Opportunities?
         </h2>
         <p className="hire-me-subtitle">
-          I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+          I'm always open to discussing new business ventures, strategic partnerships, or opportunities to contribute to your organization's growth.
         </p>
         <div className="hire-me-buttons">
           <a 
-            href="mailto:vermasandeep1290@gmail.com" 
+            href="mailto:your.email@example.com" 
             className="hire-me-btn primary"
           >
-            <FaEnvelope /> Let's Talk
+            <FaEnvelope /> Let's Connect
           </a>
           <a 
-            href={pdf}
-            download="Sandeep-Soni-Resume.pdf"
+            href="#"
+            download="Your-Name-Resume.pdf"
             className="hire-me-btn secondary"
           >
             <FaDownload /> Download CV

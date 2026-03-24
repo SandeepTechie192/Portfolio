@@ -4,13 +4,13 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { Link, useLocation } from "react-router-dom";
-import { CgGitFork, CgFileDocument } from "react-icons/cg";
+import { CgFileDocument } from "react-icons/cg";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -42,7 +42,7 @@ function NavBar() {
       <Container>
         <Navbar.Brand href="/" className="d-flex align-items-center">
           <span className="nav-logo-text">
-            &lt;SANDEEP /&gt;
+            [Your Name]
           </span>
         </Navbar.Brand>
         <Navbar.Toggle
@@ -89,7 +89,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Portfolio
               </Nav.Link>
             </Nav.Item>
 
@@ -105,12 +105,12 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/SandeepTechie192"
+                href="https://placeholder-link.com"
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                <FaLinkedinIn style={{ fontSize: "1.2em" }} />{" "}
+                Connect
               </Button>
             </Nav.Item>
           </Nav>
